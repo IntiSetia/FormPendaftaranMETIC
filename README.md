@@ -37,4 +37,4 @@ Serta aplikasi dapat membedakan sapaan untuk calon anggota baru yang berjenis ke
 ![Alt Text](https://github.com/IntiSetia/FormPendaftaranMETIC/blob/master/Hasil%20Screenshots%20Aplikasi%20(5).png)
 ![Alt Text](https://github.com/IntiSetia/FormPendaftaranMETIC/blob/master/Hasil%20Screenshots%20Aplikasi%20(6).png)
 
-![GitHub](https://docs.google.com/file/d/0B5zJmn4rx4E_eER4d1ZvWXBHWGM/view)
+[GitHub](https://docs.google.com/file/d/0B5zJmn4rx4E_eER4d1ZvWXBHWGM/view)
