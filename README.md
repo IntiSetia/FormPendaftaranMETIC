@@ -29,3 +29,6 @@ Dalam aplikasi ini, calon anggota baru yang ingin bergabung ke dalam METIC, diha
 
 Aplikasi mampu memberikan peringatan untuk menginformasikan bahwa ada data yang belum diisi atau dipilih.
 Serta aplikasi dapat membedakan sapaan untuk calon anggota baru yang berjenis kelamin berbeda. Jika laki-laki akan ditampilkan dengan sapaan "Saudara", dan jika perempuan akan ditampilkan dengan sapaan "Saudari.
+
+![Alt Text](https://github.com/IntiSetia/FormPendaftaranMETIC/blob/master/Hasil%20Screenshots%20Aplikasi%20(1).png)
+![Alt Text](https://github.com/IntiSetia/FormPendaftaranMETIC/blob/master/Hasil%20Screenshots%20Aplikasi%20(1).png)
