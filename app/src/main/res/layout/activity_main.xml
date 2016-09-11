@@ -6,7 +6,7 @@
 
     <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+        android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -31,10 +31,12 @@
 
         <TextView
             style="@style/Base.TextAppearance.AppCompat.Title"
-            android:layout_width="210dp"
+            android:layout_width="180dp"
             android:layout_height="wrap_content"
-            android:text="Form Pendaftaran Anggota Baru 2016"
-            android:textAlignment="center" />
+            android:autoText="false"
+            android:text="Pendaftaran Anggota"
+            android:textAlignment="center"
+            android:textColor="@android:color/primary_text_light" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -90,13 +92,15 @@
             android:paddingEnd="20dp"
             android:paddingRight="0dp"
             android:text="Kelas"
-            android:textColor="@color/background_material_dark" />
+            android:textColor="@color/background_material_dark"
+            android:textSize="18dp" />
 
         <Spinner
             android:id="@+id/spinnerKelas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/kelas" />
+            android:entries="@array/kelas"
+            android:paddingEnd="10dp" />
 
     </LinearLayout>
 
@@ -113,7 +117,8 @@
             android:paddingEnd="20dp"
             android:paddingRight="0dp"
             android:text="Jenis Kelamin"
-            android:textColor="@color/background_material_dark" />
+            android:textColor="@color/background_material_dark"
+            android:textSize="18dp" />
 
         <RadioGroup
             android:id="@+id/RadioGroupJK"
@@ -150,7 +155,8 @@
             android:paddingEnd="20dp"
             android:paddingRight="0dp"
             android:text="Kelas yang ingin diikuti"
-            android:textColor="@color/background_material_dark" />
+            android:textColor="@color/background_material_dark"
+            android:textSize="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -199,15 +205,17 @@
         android:id="@+id/buttonOK"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/highlighted_text_material_light"
+        android:background="#00CCFF"
         android:text="OK"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/bright_foreground_disabled_material_dark"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewHasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="18dp"
         tools:text="Hasil" />
 
 </LinearLayout>

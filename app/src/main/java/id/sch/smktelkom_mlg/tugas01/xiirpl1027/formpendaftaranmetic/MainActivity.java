@@ -72,17 +72,23 @@ public class MainActivity extends AppCompatActivity {
                 panggil = "Saudari ";
             }
 
-            if (jk == null) {
-                Toast.makeText(getApplicationContext(), "Jenis kelamin belum dipilih", Toast.LENGTH_LONG).show();
-            }
+            String materi = "Kelas yang ingin diikuti, yaitu:\n";
+            if (cbWD.isChecked()) materi += cbWD.getText() + "\n";
+            if (cbD.isChecked()) materi += cbD.getText() + "\n";
+            if (cbVE.isChecked()) materi += cbVE.getText() + "\n";
+            if (cbDG.isChecked()) materi += cbDG.getText() + "\n";
+            if (cbJ.isChecked()) materi += cbJ.getText() + "\n";
 
             StringBuilder builder = new StringBuilder();
-            builder.append("Hai " + panggil + nama + "\n");
+            builder.append("\n");
+            builder.append("Hai, " + panggil + nama + "\n");
             builder.append("Berasal dari " + asal + "\n");
-            builder.append(jk + "berumur " + umur + "\n");
+            builder.append(jk + " berumur " + umur + "\n");
             builder.append("Duduk di kelas ");
             builder.append(spKelas.getSelectedItem().toString());
-            builder.append("\n\n\nSelamat Kamu telah bergabung bersama METIC");
+            builder.append("\n");
+            builder.append(materi);
+            builder.append("\nSelamat Kamu telah bergabung bersama METIC");
 
             tvHasil.setText(builder);
         }
@@ -106,6 +112,21 @@ public class MainActivity extends AppCompatActivity {
             valid = false;
         } else {
             etAsal.setError(null);
+        }
+
+        if (!cbWD.isChecked() && !cbD.isChecked() && !cbVE.isChecked() && !cbDG.isChecked() && !cbJ.isChecked()) {
+            Toast.makeText(getApplicationContext(), "Kelas dalam METIC belum dipilih", Toast.LENGTH_LONG).show();
+        }
+
+        String jk = null;
+        if (rbL.isChecked()) {
+            jk = rbL.getText().toString();
+        }
+        if (rbP.isChecked()) {
+            jk = rbL.getText().toString();
+        }
+        if (jk == null) {
+            Toast.makeText(getApplicationContext(), "Jenis kelamin belum dipilih", Toast.LENGTH_LONG).show();
         }
 
         if (tahun.isEmpty()) {
