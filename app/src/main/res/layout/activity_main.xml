@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -40,11 +44,38 @@
 
     </LinearLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
     <EditText
         android:id="@+id/editTextNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nama" />
+        android:hint="Nama" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextTahun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Kelahiran"
+                android:inputType="numberSigned" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextAsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Asal Daerah" />
+        </android.support.design.widget.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -52,48 +83,22 @@
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/editTextTgl"
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="numberSigned"
             android:paddingEnd="20dp"
             android:paddingRight="0dp"
-            android:text="Tanggal Lahir"
-            android:textAlignment="center" />
+            android:text="Kelas"
+            android:textColor="@color/background_material_dark" />
 
-        <EditText
-            android:id="@+id/editTextBulan"
+        <Spinner
+            android:id="@+id/spinnerKelas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="numberSigned"
-            android:paddingEnd="55dp"
-            android:paddingRight="0dp"
-            android:text="Bulan"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberSigned"
-            android:paddingEnd="55dp"
-            android:paddingRight="0dp"
-            android:text="Tahun"
-            android:textAlignment="center" />
+            android:entries="@array/kelas" />
 
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/editTextAsal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Asal Daerah" />
-
-    <Spinner
-        android:id="@+id/spinnerKelas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -107,21 +112,23 @@
             android:layout_height="wrap_content"
             android:paddingEnd="20dp"
             android:paddingRight="0dp"
-            android:text="Jenis Kelamin" />
+            android:text="Jenis Kelamin"
+            android:textColor="@color/background_material_dark" />
 
         <RadioGroup
+            android:id="@+id/RadioGroupJK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButtonLaki"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Laki-laki" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -142,7 +149,8 @@
             android:layout_height="wrap_content"
             android:paddingEnd="20dp"
             android:paddingRight="0dp"
-            android:text="Kelas yang ingin diikuti" />
+            android:text="Kelas yang ingin diikuti"
+            android:textColor="@color/background_material_dark" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -151,35 +159,35 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxWD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Web Desain" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Desktop" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxVE"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Video Editing" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/checkBoxDG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
                 android:text="Desain Grafis" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/checkBoxJ"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -192,12 +200,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/highlighted_text_material_light"
-        android:text="OK" />
+        android:text="OK"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textViewHasil"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hasil" />
+        tools:text="Hasil" />
 
 </LinearLayout>
+</ScrollView>

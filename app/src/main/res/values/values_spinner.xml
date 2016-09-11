@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kelas">
+        <item>X-RPL1</item>
+        <item>X-RPL2</item>
+        <item>X-RPL3</item>
+        <item>X-RPL4</item>
+        <item>X-RPL5</item>
+        <item>X-RPL6</item>
+        <item>X-TKJ1</item>
+        <item>X-TKJ2</item>
+        <item>X-TKJ3</item>
+        <item>X-TKJ4</item>
+        <item>X-TKJ5</item>
+        <item>X-TKJ6</item>
+    </string-array>
+
+</resources>
