@@ -1,13 +1,4 @@
 # FormPendaftaranMETIC
-Nama: Inti Setia Ningtyas
-
-Kelas: XII-RPL1
-
-No. Urut: 23
-
-NIS: 4360/1258.070
-
-Nama Sekolah: SMK Telkom Malang
 
 # Penjelasan mengenai Aplikasi Form Pendaftaran METIC
 
@@ -42,3 +33,14 @@ Serta aplikasi dapat membedakan sapaan untuk calon anggota baru yang berjenis ke
 # Link Unduh File Form Pendaftaran METIC
 
 [Link Download App](https://docs.google.com/file/d/0B5zJmn4rx4E_eER4d1ZvWXBHWGM/view?usp=sharing)
+
+#Identitas
+Nama          : Inti Setia Ningtyas
+
+Kelas         : XII-RPL1
+
+No. Urut      : 23
+
+NIS           : 4360/1258.070
+
+Nama Sekolah  : SMK Telkom Malang
